@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Setup and Usage</fullName>
+                <default>false</default>
+                <label>Setup and Usage</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting</fullName>
+                <default>false</default>
+                <label>Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Suggestion</fullName>
+                <default>false</default>
+                <label>Suggestion</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>Profile</fullName>
+                <default>false</default>
+                <label>Profile</label>
+            </value>
+            <value>
+                <fullName>Order or Invoice</fullName>
+                <default>false</default>
+                <label>Order or Invoice</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Potential Adverse Event</fullName>
+                <default>false</default>
+                <label>Potential Adverse Event</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Setup and Usage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Troubleshooting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <controllingFieldValue>Feature Request</controllingFieldValue>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <controllingFieldValue>General</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <valueName>Potential Adverse Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Feature Request</controllingFieldValue>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <controllingFieldValue>General</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Suggestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <valueName>Profile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <valueName>Order or Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <valueName>Billing</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Action__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field Action : The parent field action for which this case was created.  The case represents a notification to a customer of that field action and replaces the paper letter that would traditionally have been sent to them via FedEx or snail mail.</description>
+    <externalId>false</externalId>
+    <label>Field Action</label>
+    <referenceTo>Field_Action__c</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

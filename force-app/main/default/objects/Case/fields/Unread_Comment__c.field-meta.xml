@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unread_Comment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field Action : As part of the field action process, any time a portal user sends a message or posts a comment on the Field Action Case, this flag gets checked.  The case is routed via Omni-Channel to an agent for response. Additionally, a dynamic component on the Lightning case page layout shows in big bold red letters that there is a New Case Comment.</description>
+    <externalId>false</externalId>
+    <label>Unread Comment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

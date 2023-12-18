@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Action_Case_Compact_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>Hospital__c</fields>
+    <fields>Status</fields>
+    <fields>Accepted_or_Declined__c</fields>
+    <fields>Days_Since_FA_Notification__c</fields>
+    <fields>Product_to_be_returned__c</fields>
+    <label>Field Action Case Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hospital__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field Action : The field action is related to both an Account and a Hospital (which you could make more generic as &quot;Healthcare Facility&quot;).  The Account can be a health system or a 3rd party that manages field actions for multiple facilities.  The Hospital represents the facility that received the product involved in the field action.</description>
+    <externalId>false</externalId>
+    <label>Hospital</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>FA Cases (Hospital)</relationshipLabel>
+    <relationshipName>FA_Cases_Hospital</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

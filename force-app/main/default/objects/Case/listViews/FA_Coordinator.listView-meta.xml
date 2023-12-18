@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Coordinator</fullName>
+    <columns>Hospital__c</columns>
+    <columns>FA_Nickname__c</columns>
+    <columns>FA_Notification_Date_Time__c</columns>
+    <columns>FA_Acknowledgement_Date_Time__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.ORIGIN</field>
+        <operation>equals</operation>
+        <value>Field Action</value>
+    </filters>
+    <filters>
+        <field>My_Account_or_Contact__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>FA Coordinator</label>
+</ListView>

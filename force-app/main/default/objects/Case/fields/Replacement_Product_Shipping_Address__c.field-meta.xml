@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Replacement_Product_Shipping_Address__c</fullName>
+    <description>Field Action :  As part of the Business Reply process flow on the portal, the Field Action Coordinator is presented with a pre-populated field showing the address where replacement product should be shipped.  They have the option to update it in the flow or accept the default.  The flow populates the value from the Account associated with the Field Action Case.</description>
+    <externalId>false</externalId>
+    <label>Replacement Address / PO</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

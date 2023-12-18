@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Acknowledgement_Date_Time__c</fullName>
+    <description>Field Action : The date/time that the portal user clicked on the Acknowledge button for a Field Action.  (Clicking this button then prompts them to accept or decline the field action.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date/time that the portal user clicked on the Acknowledge button for this Field Action.</inlineHelpText>
+    <label>Acknowledged Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

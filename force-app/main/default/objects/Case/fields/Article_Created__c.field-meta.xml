@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Article_Created__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Helper field for Create Article flow. Flag set to True during the Create Article flow</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Article created using the Create Article flow through the dynamic button</inlineHelpText>
+    <label>Article Created</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

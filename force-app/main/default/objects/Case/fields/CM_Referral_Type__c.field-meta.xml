@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Referral_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>CM Referral Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Post-discharge Care</fullName>
+                <default>false</default>
+                <label>Post-discharge Care</label>
+            </value>
+            <value>
+                <fullName>Medication Review</fullName>
+                <default>false</default>
+                <label>Medication Review</label>
+            </value>
+            <value>
+                <fullName>Medication Therapy Mmgt Review</fullName>
+                <default>false</default>
+                <label>Medication Therapy Mmgt Review</label>
+            </value>
+            <value>
+                <fullName>Diabetes Education</fullName>
+                <default>false</default>
+                <label>Diabetes Education</label>
+            </value>
+            <value>
+                <fullName>Medicaid LTSS</fullName>
+                <default>false</default>
+                <label>Medicaid LTSS</label>
+            </value>
+            <value>
+                <fullName>Complex</fullName>
+                <default>false</default>
+                <label>Complex</label>
+            </value>
+            <value>
+                <fullName>DSNP</fullName>
+                <default>false</default>
+                <label>DSNP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

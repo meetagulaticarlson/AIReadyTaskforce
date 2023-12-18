@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Cases_Lauren_Doyle</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Channel__c</columns>
+    <columns>Status_Indicator__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Member__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>CASES.LAST_UPDATE</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CONTACT.ACCOUNT</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>equals</operation>
+        <value>Lauren Doyle</value>
+    </filters>
+    <label>All Open Cases (Lauren Doyle)</label>
+</ListView>

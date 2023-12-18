@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pick_Up__c</fullName>
+    <description>Part of the Escalation URL package. Alena Abrosimova</description>
+    <externalId>false</externalId>
+    <formula>IF (Escalation_URL__c =&quot;&quot;, &quot;&quot;, 
+IF (Escalation_URL__c &lt;&gt; &quot;&quot;, HYPERLINK(Escalation_URL__c, IMAGE(&quot;/resource/context&quot;, &quot;&quot;), &quot;_parent&quot;), &quot;_parent&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pick Up</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
