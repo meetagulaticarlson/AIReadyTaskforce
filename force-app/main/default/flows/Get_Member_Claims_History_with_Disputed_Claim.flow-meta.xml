@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <name>Add_Claim_Details_to_Prompt_Template</name>
+        <elementSubtype>CreatePromptInstructions</elementSubtype>
+        <label>Add Claim Details to Prompt Template.</label>
+        <locationX>138</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>$Prompt</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Approved Claim Procedure: {!Get_Each_Claim.Procedure__r.CodeDescription}
+Approved Claim Procedure: {!Get_Each_Claim.Diagnosis__r.CodeDescription}
+</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Each_Claim</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Disputed_Claim_to_Prompt</name>
+        <elementSubtype>CreatePromptInstructions</elementSubtype>
+        <label>Add Disputed Claim to Prompt</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>$Prompt</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Denied Claim Procedure: {!Get_Disputed_Claim_Details.Diagnosis__r.CodeDescription}
+Denied Claim Diagnosis: {!Get_Disputed_Claim_Details.Procedure__r.CodeDescription}
+</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Approved_Claims</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Note_About_No_Approved_Claims</name>
+        <elementSubtype>CreatePromptInstructions</elementSubtype>
+        <label>Add Note About No Approved Claims</label>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>$Prompt</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>{!Get_Approved_Claims}
+</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Any_Claims</name>
+        <label>Any Claims</label>
+        <locationX>182</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Add_Note_About_No_Approved_Claims</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Approved_Claims</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Each_Claim</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Get Member Claims History with Disputed Claim {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Get Member Claims History with Disputed Claim</label>
+    <loops>
+        <name>Get_Each_Claim</name>
+        <label>Get Each Claim</label>
+        <locationX>50</locationX>
+        <locationY>566</locationY>
+        <collectionReference>Get_Approved_Claims</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_Claim_Details_to_Prompt_Template</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>PromptFlow</processType>
+    <recordLookups>
+        <name>Get_Approved_Claims</name>
+        <label>Get Approved Claims</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Any_Claims</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Member__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Case.Member__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Health_Insurance_Claim__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Disputed_Claim_Details</name>
+        <label>Get Disputed Claim Details</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_Disputed_Claim_to_Prompt</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Case.Health_Insurance_Claim__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Health_Insurance_Claim__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Disputed_Claim_Details</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Case</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

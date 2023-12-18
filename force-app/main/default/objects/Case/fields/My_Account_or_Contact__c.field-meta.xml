@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Account_or_Contact__c</fullName>
+    <description>Field Action : Used in the portal dashboard / reports to only show field actions that are related to the portal user.  If the field action case has their account OR contact listed, then it is included in the dashboard.  Also used to control the Kanban Case list views in the portal that show  &quot;My FAs&quot; by the different statuses (New, Pending, Completed). Note that the PortalType portion of the formula allows for values to show in the Reports, Dashboards and List Views when it is an internal user viewing these elements.</description>
+    <externalId>false</externalId>
+    <formula>IF( TEXT($UserRole.PortalType)=&apos;None&apos;,TRUE,
+IF( OR(ContactId = $User.ContactId, AccountId = $User.Account_Id_Formula__c ),TRUE,FALSE)
+)</formula>
+    <label>My Account or Contact?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

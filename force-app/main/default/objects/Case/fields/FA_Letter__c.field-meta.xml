@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Letter__c</fullName>
+    <description>Field Action : Stores the id of the .pdf file on the parent Field Action. This file is the letter associated with the field action and is populated in this field so that the letter can be previewed in a flow (both on the portal and in the Service Console Case).</description>
+    <externalId>false</externalId>
+    <label>FA Letter</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

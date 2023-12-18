@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Inventory__c</fullName>
+    <description>Field Action : As part of the Business Reply process, the portal user indicates whether they have any product involved in the field action currently in their inventory that will be returned.</description>
+    <externalId>false</externalId>
+    <label>Product Inventory?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No product to return</fullName>
+                <default>false</default>
+                <label>No product to return</label>
+            </value>
+            <value>
+                <fullName>Product will be returned</fullName>
+                <default>false</default>
+                <label>Product will be returned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

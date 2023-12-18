@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Owner_Check__c</fullName>
+    <description>Field Action : Determines whether the current user is the case owner.</description>
+    <externalId>false</externalId>
+    <formula>Contact.Id = $User.Id</formula>
+    <label>Case Owner Check</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

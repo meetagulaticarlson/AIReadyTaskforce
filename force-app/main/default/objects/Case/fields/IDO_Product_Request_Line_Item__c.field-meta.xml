@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDO_Product_Request_Line_Item__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Custom field to capture the Product Request Line Item which created the device shipment case.</description>
+    <externalId>false</externalId>
+    <label>Product Request Line Item</label>
+    <referenceTo>ProductRequestLineItem</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

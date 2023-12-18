@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Benefits_Verifications_Work_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Benefits Verifications Work</label>
+    <queue>Benefits_Verifications_Work</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

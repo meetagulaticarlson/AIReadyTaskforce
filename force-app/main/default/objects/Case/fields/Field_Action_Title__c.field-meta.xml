@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Action_Title__c</fullName>
+    <description>Field Action : This is the title of the parent Field Action.</description>
+    <externalId>false</externalId>
+    <formula>Field_Action__r.Title__c</formula>
+    <label>Field Action Title</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

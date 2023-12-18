@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Field_Action_Cases</fullName>
+    <columns>Hospital__c</columns>
+    <columns>FA_Nickname__c</columns>
+    <columns>FA_Notification_Date_Time__c</columns>
+    <columns>FA_Acknowledgement_Date_Time__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Field_Action</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>All Open Field Action Cases</label>
+</ListView>

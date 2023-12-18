@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Late_to_Refill_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Late to Refill Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wants to manage own refills</fullName>
+                <default>false</default>
+                <label>Wants to manage own refills</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t have time</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t have time</label>
+            </value>
+            <value>
+                <fullName>Has too many meds already / stockpiling</fullName>
+                <default>false</default>
+                <label>Has too many meds already / stockpiling</label>
+            </value>
+            <value>
+                <fullName>Can&apos;t afford to refill</fullName>
+                <default>false</default>
+                <label>Can&apos;t afford to refill</label>
+            </value>
+            <value>
+                <fullName>Wants to talk to MD first</fullName>
+                <default>false</default>
+                <label>Wants to talk to MD first</label>
+            </value>
+            <value>
+                <fullName>No longer taking</fullName>
+                <default>false</default>
+                <label>No longer taking</label>
+            </value>
+            <value>
+                <fullName>Too many side effects</fullName>
+                <default>false</default>
+                <label>Too many side effects</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

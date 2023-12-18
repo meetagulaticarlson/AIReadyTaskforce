@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewal_Decline_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Renewal Decline Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Member_Renewal_Outcome__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cost</fullName>
+                <default>false</default>
+                <label>Cost</label>
+            </value>
+            <value>
+                <fullName>Coverage with a Competitor</fullName>
+                <default>false</default>
+                <label>Coverage with a Competitor</label>
+            </value>
+            <value>
+                <fullName>Benefits</fullName>
+                <default>false</default>
+                <label>Benefits</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Declined Renewal</controllingFieldValue>
+            <valueName>Cost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined Renewal</controllingFieldValue>
+            <valueName>Coverage with a Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined Renewal</controllingFieldValue>
+            <valueName>Benefits</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

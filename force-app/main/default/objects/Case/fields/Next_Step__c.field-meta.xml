@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Step__c</fullName>
+    <externalId>false</externalId>
+    <label>Next Step</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call</fullName>
+                <default>false</default>
+                <label>Call</label>
+            </value>
+            <value>
+                <fullName>Follow-up Email</fullName>
+                <default>false</default>
+                <label>Follow-up Email</label>
+            </value>
+            <value>
+                <fullName>Follow-up Fax</fullName>
+                <default>false</default>
+                <label>Follow-up Fax</label>
+            </value>
+            <value>
+                <fullName>Waiting on CAQH Updates</fullName>
+                <default>false</default>
+                <label>Waiting on CAQH Updates</label>
+            </value>
+            <value>
+                <fullName>Non-Compliance Specialist</fullName>
+                <default>false</default>
+                <label>Non-Compliance Specialist</label>
+            </value>
+            <value>
+                <fullName>Certified Letter</fullName>
+                <default>false</default>
+                <label>Certified Letter</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

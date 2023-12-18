@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Pharma__c</fullName>
+    <externalId>false</externalId>
+    <label>Drug Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oncarta</fullName>
+                <default>false</default>
+                <label>Oncarta</label>
+            </value>
+            <value>
+                <fullName>Envira</fullName>
+                <default>false</default>
+                <label>Envira</label>
+            </value>
+            <value>
+                <fullName>Dudviem</fullName>
+                <default>false</default>
+                <label>Dudviem</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

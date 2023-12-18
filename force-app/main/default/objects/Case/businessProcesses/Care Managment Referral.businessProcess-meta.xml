@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Care Managment Referral</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Assessing Needs</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Care Plan Creation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Goals Met</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Goals Not Met</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Concurrent Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Declined</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Initial Outreach</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Intake Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Ongoing Management</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Referred</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Unable to Contact</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

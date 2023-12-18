@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Dispute_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Claim Dispute Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incorrect Member</fullName>
+                <default>false</default>
+                <label>Incorrect Member</label>
+            </value>
+            <value>
+                <fullName>Incorrect Provider</fullName>
+                <default>false</default>
+                <label>Incorrect Provider</label>
+            </value>
+            <value>
+                <fullName>Coding/Bundling Edits</fullName>
+                <default>false</default>
+                <label>Coding/Bundling Edits</label>
+            </value>
+            <value>
+                <fullName>Timely Filing</fullName>
+                <default>false</default>
+                <label>Timely Filing</label>
+            </value>
+            <value>
+                <fullName>Claims Reversal Needed</fullName>
+                <default>false</default>
+                <label>Claims Reversal Needed</label>
+            </value>
+            <value>
+                <fullName>Under/Overpayment</fullName>
+                <default>false</default>
+                <label>Under/Overpayment</label>
+            </value>
+            <value>
+                <fullName>Service is not a duplicate</fullName>
+                <default>false</default>
+                <label>Service is not a duplicate</label>
+            </value>
+            <value>
+                <fullName>Pre-Authorization now on file</fullName>
+                <default>false</default>
+                <label>Pre-Authorization now on file</label>
+            </value>
+            <value>
+                <fullName>COB - Alternate Insurance Information</fullName>
+                <default>false</default>
+                <label>COB - Alternate Insurance Information</label>
+            </value>
+            <value>
+                <fullName>COB - Related Adjustment Primary Insurance</fullName>
+                <default>false</default>
+                <label>COB - Related Adjustment Primary Insurance</label>
+            </value>
+            <value>
+                <fullName>COB - Retrospective Medical Review</fullName>
+                <default>false</default>
+                <label>COB - Retrospective Medical Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>
